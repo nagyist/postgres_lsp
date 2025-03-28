@@ -103,7 +103,7 @@
     <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
       <li class="breadcrumb-item active">Introduction</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/supabase-community/postgres_lsp/edit/master/docs/index.md">Edit on supabase-community/postgres_lsp</a>
+          <a href="https://github.com/supabase-community/postgres-language-server/edit/master/docs/index.md">Edit on supabase-community/postgres-language-server</a>
     </li>
   </ul>
   <hr/>
@@ -115,7 +115,7 @@
 <h1 id="postgres-language-server">Postgres Language Server</h1>
 <p>A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling.</p>
 <hr />
-<p><strong>Source Code</strong>: <a href="https://github.com/supabase-community/postgres_lsp" target="_blank">https://github.com/supabase-community/postgres_lsp</a></p>
+<p><strong>Source Code</strong>: <a href="https://github.com/supabase-community/postgres-language-server" target="_blank">https://github.com/supabase-community/postgres-language-server</a></p>
 <hr />
 <h2 id="overview">Overview</h2>
 <p>This project provides a toolchain for Postgres development, built on Postgres' own parser <code>libpg_query</code> to ensure 100% syntax compatibility. It is built on a Server-Client architecture with a transport-agnostic design. This means all features can be accessed not only through the <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a>, but also through other interfaces like a CLI, HTTP APIs, or a WebAssembly module. The goal is to make all the great Postgres tooling out there as accessible as possible, and to build anything that is missing ourselves.</p>
@@ -128,8 +128,8 @@
 </ul>
 <p>Our current focus is on refining and enhancing these core features while building a robust and easily accessible infrastructure. For future plans and opportunities to contribute, please check out the issues and discussions. Any contributions are welcome!</p>
 <h2 id="installation">Installation</h2>
-<p>To install Postgres Tools, grab the executable for your platform from the <a href="https://github.com/supabase-community/postgres_lsp/releases/latest">latest CLI release</a> on GitHub and give it execution permission.</p>
-<pre><code class="language-sh">curl -L https://github.com/supabase-community/postgres_lsp/releases/download/&lt;version&gt;/postgrestools_aarch64-apple-darwin -o postgrestools
+<p>To install Postgres Tools, grab the executable for your platform from the <a href="https://github.com/supabase-community/postgres-language-server/releases/latest">latest CLI release</a> on GitHub and give it execution permission.</p>
+<pre><code class="language-sh">curl -L https://github.com/supabase-community/postgres-language-server/releases/download/&lt;version&gt;/postgrestools_aarch64-apple-darwin -o postgrestools
 chmod +x postgrestools
 </code></pre>
 <p>Now you can use Postgres Tools by simply running <code>./postgrestools</code>.</p>
@@ -178,7 +178,7 @@ chmod +x postgrestools
 <h2 id="install-an-editor-plugin">Install an Editor Plugin</h2>
 <p>We recommend installing an editor plugin to get the most out of Postgres Language Tools.</p>
 <h3 id="vscode">VSCode</h3>
-<p>TODO</p>
+<p>The language server is available on the <a href="https://marketplace.visualstudio.com/items?itemName=Supabase.postgrestools-vscode">VSCode Marketplace</a>. Its published from <a href="https://github.com/supabase-community/postgrestools-vscode">this repo</a>.</p>
 <h3 id="neovim">Neovim</h3>
 <p>You will have to install <code>nvim-lspconfig</code>, and follow the <a href="https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#postgres_lsp">instructions</a>.</p>
 <h3 id="other">Other</h3>
@@ -206,10 +206,7 @@ In order to do so, you first need to start a daemon process with the start comma
 <p>For other operative systems, you can find the folder in the system’s temporary directory.</p>
 <p>You can change the location of the <code>pgt-logs</code> folder via the <code>PGT_LOG_PATH</code> variable.</p>
 <h2 id="ci-setup">CI Setup</h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We will update this section once we have published the binaries.</p>
-</div>
+<p>To use the CLI in GitHub Actions, you can install it via our <a href="https://github.com/supabase-community/postgrestools-cli-action">GitHub Action</a>.</p>
               
             </div>
           </div><footer>
@@ -237,7 +234,7 @@ In order to do so, you first need to start a daemon process with the start comma
   <span class="rst-current-version" data-toggle="rst-current-version">
     
         <span>
-          <a href="https://github.com/supabase-community/postgres_lsp" class="fa fa-code-fork" style="color: #fcfcfc"> supabase-community/postgres_lsp</a>
+          <a href="https://github.com/supabase-community/postgres-language-server" class="fa fa-code-fork" style="color: #fcfcfc"> supabase-community/postgres-language-server</a>
         </span>
     
     
@@ -261,5 +258,5 @@ In order to do so, you first need to start a daemon process with the start comma
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-03-26 16:24:03.660739+00:00
+Build Date UTC : 2025-03-28 22:36:00.732033+00:00
 -->
