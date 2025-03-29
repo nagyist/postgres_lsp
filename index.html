@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling." /><link rel="canonical" href="https://pgtools.dev/" />
       <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Postgres Language Tools</title>
+    <title>Postgres Language Server</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -30,7 +30,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> Postgres Language Tools
+          <a href="." class="icon icon-home"> Postgres Language Server
         </a>
       </div>
 
@@ -94,7 +94,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">Postgres Language Tools</a>
+          <a href=".">Postgres Language Server</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -118,6 +118,20 @@
 <p><strong>Source Code</strong>: <a href="https://github.com/supabase-community/postgres-language-server" target="_blank">https://github.com/supabase-community/postgres-language-server</a></p>
 <hr />
 <h2 id="overview">Overview</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">LSP Demo</th>
+<th style="text-align: center;">CLI Demo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="LSP Demo" src="images/lsp-demo.gif" /></td>
+<td style="text-align: center;"><img alt="CLI Demo" src="images/cli-demo.png" /></td>
+</tr>
+</tbody>
+</table>
 <p>This project provides a toolchain for Postgres development, built on Postgres' own parser <code>libpg_query</code> to ensure 100% syntax compatibility. It is built on a Server-Client architecture with a transport-agnostic design. This means all features can be accessed not only through the <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a>, but also through other interfaces like a CLI, HTTP APIs, or a WebAssembly module. The goal is to make all the great Postgres tooling out there as accessible as possible, and to build anything that is missing ourselves.</p>
 <p>Currently, the following features are implemented:</p>
 <ul>
@@ -258,5 +272,5 @@ In order to do so, you first need to start a daemon process with the start comma
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-03-28 22:36:00.732033+00:00
+Build Date UTC : 2025-03-29 16:32:27.912013+00:00
 -->
