@@ -169,6 +169,16 @@
   }
 }
 </code></pre>
+<p>When you need to pass additional Postgres settings (e.g. <code>sslmode</code>, <code>options</code>,
+<code>application_name</code>) you can provide a connection string instead of the
+individual fields. The URI takes precedence over any other connection fields.</p>
+<pre><code class="language-json">{
+  &quot;db&quot;: {
+    &quot;connectionString&quot;: &quot;postgres://postgres:postgres@localhost:5432/postgres?sslmode=disable&quot;,
+    &quot;allowStatementExecutionsAgainst&quot;: [&quot;localhost/*&quot;]
+  }
+}
+</code></pre>
 <h2 id="specifying-files-to-process">Specifying files to process</h2>
 <p>You can control the files/folders to process using different strategies, either CLI, configuration and VCS.</p>
 <h3 id="include-files-via-cli">Include files via CLI</h3>

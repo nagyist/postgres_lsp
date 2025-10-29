@@ -77,6 +77,10 @@
          <lastmod>2025-10-29</lastmod>
     </url>
     <url>
+         <loc>https://pg-language-server.com/main/reference/rules/add-serial-column/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
          <loc>https://pg-language-server.com/main/reference/rules/adding-field-with-default/</loc>
          <lastmod>2025-10-29</lastmod>
     </url>
@@ -133,7 +137,19 @@
          <lastmod>2025-10-29</lastmod>
     </url>
     <url>
+         <loc>https://pg-language-server.com/main/reference/rules/creating-enum/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
          <loc>https://pg-language-server.com/main/reference/rules/disallow-unique-constraint/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://pg-language-server.com/main/reference/rules/lock-timeout-warning/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://pg-language-server.com/main/reference/rules/multiple-alter-table/</loc>
          <lastmod>2025-10-29</lastmod>
     </url>
     <url>
@@ -182,6 +198,10 @@
     </url>
     <url>
          <loc>https://pg-language-server.com/main/reference/rules/require-concurrent-index-deletion/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://pg-language-server.com/main/reference/rules/running-statement-while-holding-access-exclusive/</loc>
          <lastmod>2025-10-29</lastmod>
     </url>
     <url>
